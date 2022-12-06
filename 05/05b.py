@@ -1,8 +1,8 @@
 from queue import LifoQueue
 import re
 
-with open("input", "r") as f:
-    stack_input, crane_input = f.read().strip().split("\n\n")
+with open("input_festive", "r") as f:
+    stack_input, crane_input = f.read().strip("\n").split("\n\n")
 
 stacks = []
 for i, row in enumerate(stack_input.split("\n")[0:-1][::-1]):
